@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="ui-g">
+    <div class="ui-g-12">
+      <h1>Pessoas</h1>
+    </div>
+    <div class="ui-g-12 ui-fluid">
+      <label>Nome</label>
+      <input type="text" pInputText pTooltip="Nome da pessoa" tooltipPosition="top">
+    </div>
+    <div class="ui-g-12">
+      <button pButton type="button" label="Pesquisar"
+        pTooltip="Fazer Consultas" tooltipPosition="top"></button>
+    </div>
+  </div>
+
+  <app-pessoas-grid [pessoas]="pessoas"></app-pessoas-grid>
+
+  <div class="ui-g-12">
+    <a pButton label="Novo Pessoa"
+      pTooltip="Inclusão" tooltipPosition="top"></a>
+  </div>
+</div>
